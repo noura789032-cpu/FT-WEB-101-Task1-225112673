@@ -1,0 +1,86 @@
+<!-- Noura Mohammed - ID: 225112673 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noura Mohammed - Portfolio</title>
+    <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <!-- Floating Navigation Bar -->
+        <header class="floating-nav">
+            <span class="logo">Noura.dev</span>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+                <button id="dark-mode-btn">🌙 Mode</button>
+            </nav>
+        </header>
+
+        <!-- About Section (Hero Section) -->
+        <section id="about" class="hero-card">
+            <div class="avatar-container">
+                <img src="images/me.jpg.jpg" alt="Noura Mohammed" class="profile-img">
+            </div>
+            <div class="hero-content">
+                <h1>Noura Mohammed Abdelatif</h1>
+                <span class="badge">Computer Science Student • FT-WEB-101</span>
+                <p class="bio">
+                    Hello everyone, and welcome to my professional portfolio page! My name is Noura Mohammed Abdelatif, and I am currently an enthusiastic Level 1 undergraduate Computer Science student at New Mansoura University in Egypt. I am actively completing Field Training 1 (FT-WEB-101, Task 1), where I am expanding my practical knowledge in modern web design and software development.
+                </p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-container">
+            <h2>My Expertise</h2>
+            <div class="grid-skills">
+                <div class="skill-box">
+                    <div class="icon">💻</div>
+                    <h3>Programming</h3>
+                    <p>C#, Java, Python & OOP Concepts.</p>
+                </div>
+                <div class="skill-box">
+                    <div class="icon">🌐</div>
+                    <h3>Web Dev</h3>
+                    <p>HTML5, CSS3, JavaScript & Responsive Layouts.</p>
+                </div>
+                <div class="skill-box">
+                    <div class="icon">⚙️</div>
+                    <h3>Problem Solving</h3>
+                    <p>Algorithms & Data Structures.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-box">
+            <h2>Get in Touch</h2>
+            <p>Feel free to reach out to me anytime!</p>
+            <form>
+                <div class="input-row">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <button type="submit" class="send-btn">Send Message</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Noura Mohammed Abdelatif. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Dark Mode Script -->
+    <script>
+        const modeBtn = document.getElementById('dark-mode-btn');
+        modeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+        });
+    </script>
+</body>
+</html>
